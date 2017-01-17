@@ -35,7 +35,9 @@ Rails.application.routes.draw do
   	 end
   end
 
- get "/Orders/listing" ,to: "order#location"
+ resources :orders do
+ 	get 'listing',on: :collection
+ end
  
 end
 

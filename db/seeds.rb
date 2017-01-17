@@ -51,7 +51,7 @@
     end
 
      menu_item_array = [{name:"egg roll",price:80,veg:false},
-                       {name:"chicken roll",price:90,veg:false},
+                       {name:"chicken roll",price:90,veg:false},:
                        {name:"cold coffee",price:45,veg:true}]
 
     menu_item_array.each do |menu_item|
@@ -68,10 +68,10 @@
     	               email_id: "kiran@joshsoftware.com"},
     	               {name: "payal",mobile_number: 9421895727,designation: "hr",
     	               email_id: "payal@joshsoftware.com"},
-    	              {name: "akshay",mobile_number: 9089212127,designation: "android application developer",
+    	               {name: "akshay",mobile_number: 9089212127,designation: "android application developer",
     	               email_id: "akshay@joshsoftware.com"},
-    	             {name: "tejaswini",mobile_number: 9421215727,designation: "database administrator",
-    	               email_id: "tejaswini@joshsoftware.com"}]
+    	               {name: "tejaswini",mobile_number: 9421215727,designation: "database administrator",
+    	                email_id: "tejaswini@joshsoftware.com"}]
 
     employee_array.each do |employee|
     	company1.employees.find_or_create_by(employee)
